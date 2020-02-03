@@ -38,7 +38,9 @@ public class panelPrincipal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Programador Salas de Reuniones");
+        setTitle("CHOCOLATES SIERRA - Control de Salas");
+        setIconImage(getIconImage());
+        setIconImages(getIconImages());
         setMaximumSize(new java.awt.Dimension(765, 560));
         setMinimumSize(new java.awt.Dimension(765, 560));
         setUndecorated(true);

@@ -28,6 +28,13 @@ public class panelPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -39,9 +46,53 @@ public class panelPrincipal extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        jButton1.setText("jButton1");
+        jButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        jButton1.setText("SALA A-1");
         getContentPane().add(jButton1);
-        jButton1.setBounds(50, 60, 170, 90);
+        jButton1.setBounds(60, 120, 170, 90);
+
+        jButton2.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        jButton2.setText("SALA A-2");
+        getContentPane().add(jButton2);
+        jButton2.setBounds(60, 260, 170, 90);
+
+        jButton3.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        jButton3.setText("SALA A-3");
+        getContentPane().add(jButton3);
+        jButton3.setBounds(60, 400, 170, 90);
+
+        jButton4.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        jButton4.setText("SALA B-1");
+        getContentPane().add(jButton4);
+        jButton4.setBounds(530, 120, 170, 90);
+
+        jButton5.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        jButton5.setText("SALA B-2");
+        getContentPane().add(jButton5);
+        jButton5.setBounds(530, 260, 170, 90);
+
+        jButton6.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        jButton6.setText("SALA B-3");
+        getContentPane().add(jButton6);
+        jButton6.setBounds(530, 400, 170, 90);
+
+        jLabel2.setBackground(new java.awt.Color(222, 195, 172));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Primer Nivel");
+        jLabel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, java.awt.Color.black, java.awt.Color.black, java.awt.Color.black, java.awt.Color.black));
+        jLabel2.setOpaque(true);
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(60, 60, 170, 30);
+
+        jLabel3.setBackground(new java.awt.Color(222, 195, 172));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Segundo Nivel");
+        jLabel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, java.awt.Color.black, java.awt.Color.black, java.awt.Color.black, java.awt.Color.black));
+        jLabel3.setOpaque(true);
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(530, 60, 170, 30);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/salas-reuniones-officehelp.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -87,6 +138,13 @@ public class panelPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

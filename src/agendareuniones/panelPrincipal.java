@@ -20,6 +20,9 @@ public class panelPrincipal extends javax.swing.JFrame {
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("../icons/chocolate.png")).getImage());
     }
+    panelAgenda formAgenda = new panelAgenda();
+    
+    int salaEnConsulta;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -30,12 +33,12 @@ public class panelPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        btnSalaA1 = new javax.swing.JButton();
+        btnSalaA2 = new javax.swing.JButton();
+        btnSalaA3 = new javax.swing.JButton();
+        btnSalaB1 = new javax.swing.JButton();
+        btnSalaB2 = new javax.swing.JButton();
+        btnSalaB3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -44,40 +47,71 @@ public class panelPrincipal extends javax.swing.JFrame {
         setTitle("CHOCOLATES SIERRA - Control de Salas");
         setIconImage(getIconImage());
         setIconImages(getIconImages());
+        setLocation(new java.awt.Point(150, 150));
         setMaximumSize(new java.awt.Dimension(765, 560));
         setMinimumSize(new java.awt.Dimension(765, 560));
         setPreferredSize(new java.awt.Dimension(765, 560));
         getContentPane().setLayout(null);
 
-        jButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jButton1.setText("SALA A-1");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(60, 120, 170, 90);
+        btnSalaA1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        btnSalaA1.setText("SALA A-1");
+        btnSalaA1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalaA1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSalaA1);
+        btnSalaA1.setBounds(60, 120, 170, 90);
 
-        jButton2.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jButton2.setText("SALA A-2");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(60, 260, 170, 90);
+        btnSalaA2.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        btnSalaA2.setText("SALA A-2");
+        btnSalaA2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalaA2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSalaA2);
+        btnSalaA2.setBounds(60, 260, 170, 90);
 
-        jButton3.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jButton3.setText("SALA A-3");
-        getContentPane().add(jButton3);
-        jButton3.setBounds(60, 400, 170, 90);
+        btnSalaA3.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        btnSalaA3.setText("SALA A-3");
+        btnSalaA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalaA3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSalaA3);
+        btnSalaA3.setBounds(60, 400, 170, 90);
 
-        jButton4.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jButton4.setText("SALA B-1");
-        getContentPane().add(jButton4);
-        jButton4.setBounds(530, 120, 170, 90);
+        btnSalaB1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        btnSalaB1.setText("SALA B-1");
+        btnSalaB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalaB1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSalaB1);
+        btnSalaB1.setBounds(530, 120, 170, 90);
 
-        jButton5.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jButton5.setText("SALA B-2");
-        getContentPane().add(jButton5);
-        jButton5.setBounds(530, 260, 170, 90);
+        btnSalaB2.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        btnSalaB2.setText("SALA B-2");
+        btnSalaB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalaB2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSalaB2);
+        btnSalaB2.setBounds(530, 260, 170, 90);
 
-        jButton6.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jButton6.setText("SALA B-3");
-        getContentPane().add(jButton6);
-        jButton6.setBounds(530, 400, 170, 90);
+        btnSalaB3.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        btnSalaB3.setText("SALA B-3");
+        btnSalaB3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalaB3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSalaB3);
+        btnSalaB3.setBounds(530, 400, 170, 90);
 
         jLabel2.setBackground(new java.awt.Color(222, 195, 172));
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -105,6 +139,48 @@ public class panelPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSalaA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaA1ActionPerformed
+        // TODO add your handling code here:
+        formAgenda.lblNombreSala.setText("A-1");
+        salaEnConsulta = 0;
+        formAgenda.setVisible(true);
+    }//GEN-LAST:event_btnSalaA1ActionPerformed
+
+    private void btnSalaA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaA3ActionPerformed
+        // TODO add your handling code here:
+        formAgenda.lblNombreSala.setText("A-3");
+        salaEnConsulta = 2;
+        formAgenda.setVisible(true);
+    }//GEN-LAST:event_btnSalaA3ActionPerformed
+
+    private void btnSalaA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaA2ActionPerformed
+        // TODO add your handling code here:
+        formAgenda.lblNombreSala.setText("A-2");
+        salaEnConsulta = 1;
+        formAgenda.setVisible(true);
+    }//GEN-LAST:event_btnSalaA2ActionPerformed
+
+    private void btnSalaB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaB1ActionPerformed
+        // TODO add your handling code here:
+        formAgenda.lblNombreSala.setText("B-1");
+        salaEnConsulta = 3;
+        formAgenda.setVisible(true);
+    }//GEN-LAST:event_btnSalaB1ActionPerformed
+
+    private void btnSalaB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaB2ActionPerformed
+        // TODO add your handling code here:
+        formAgenda.lblNombreSala.setText("B-2");
+        salaEnConsulta = 4;
+        formAgenda.setVisible(true);
+    }//GEN-LAST:event_btnSalaB2ActionPerformed
+
+    private void btnSalaB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaB3ActionPerformed
+        // TODO add your handling code here:
+        formAgenda.lblNombreSala.setText("B-3");
+        salaEnConsulta = 5;
+        formAgenda.setVisible(true);
+    }//GEN-LAST:event_btnSalaB3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,12 +218,12 @@ public class panelPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton btnSalaA1;
+    private javax.swing.JButton btnSalaA2;
+    private javax.swing.JButton btnSalaA3;
+    private javax.swing.JButton btnSalaB1;
+    private javax.swing.JButton btnSalaB2;
+    private javax.swing.JButton btnSalaB3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

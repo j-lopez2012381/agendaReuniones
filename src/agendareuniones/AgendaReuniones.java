@@ -17,6 +17,9 @@ public class AgendaReuniones {
     public static void main(String[] args) {
         // TODO code application logic here
         panelPrincipal frame = new panelPrincipal();
+        Salas salas = new Salas();
+        salas.resetAgenda();
+        System.out.println(salas.agenda[1][2][3]);
         frame.setVisible(true);
     }
     

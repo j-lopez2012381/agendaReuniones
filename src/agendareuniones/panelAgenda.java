@@ -10,6 +10,11 @@ package agendareuniones;
  * @author Estuardo
  */
 public class panelAgenda extends javax.swing.JFrame {
+    
+    Salas salas = new Salas();
+    int h;
+    int d;
+    int s;
 
     /**
      * Creates new form panelAgenda
@@ -27,6 +32,14 @@ public class panelAgenda extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        btnOcupar9 = new javax.swing.JButton();
+        btnOcupar10 = new javax.swing.JButton();
+        btnOcupar11 = new javax.swing.JButton();
+        btnOcupar12 = new javax.swing.JButton();
+        btnOcupar13 = new javax.swing.JButton();
+        btnOcupar14 = new javax.swing.JButton();
+        btnOcupar15 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         lblNombreSala = new javax.swing.JLabel();
         cbxDia = new javax.swing.JComboBox<>();
@@ -41,26 +54,92 @@ public class panelAgenda extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        lblEstado9a10 = new javax.swing.JLabel();
-        lblEstado10a11 = new javax.swing.JLabel();
-        lblEstado11a12 = new javax.swing.JLabel();
-        lblEstado12a13 = new javax.swing.JLabel();
-        lblEstado13a14 = new javax.swing.JLabel();
-        lblEstado14a15 = new javax.swing.JLabel();
-        lblEstado15a16 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        btnOcupar9 = new javax.swing.JButton();
-        btnOcupar10 = new javax.swing.JButton();
-        btnOcupar11 = new javax.swing.JButton();
-        btnOcupar12 = new javax.swing.JButton();
-        btnOcupar13 = new javax.swing.JButton();
-        btnOcupar14 = new javax.swing.JButton();
-        btnOcupar15 = new javax.swing.JButton();
+        lblEstado9 = new javax.swing.JLabel();
+        lblEstado10 = new javax.swing.JLabel();
+        lblEstado11 = new javax.swing.JLabel();
+        lblEstado12 = new javax.swing.JLabel();
+        lblEstado13 = new javax.swing.JLabel();
+        lblEstado14 = new javax.swing.JLabel();
+        lblEstado15 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         btnHecho = new javax.swing.JButton();
         btnLimpiarAgenda = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(250, 250));
+        setUndecorated(true);
+
+        jPanel1.setLayout(null);
+
+        btnOcupar9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnOcupar9.setText("OCUPAR");
+        btnOcupar9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOcupar9ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnOcupar9);
+        btnOcupar9.setBounds(12, 36, 104, 25);
+
+        btnOcupar10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnOcupar10.setText("OCUPAR");
+        btnOcupar10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOcupar10ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnOcupar10);
+        btnOcupar10.setBounds(10, 80, 104, 25);
+
+        btnOcupar11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnOcupar11.setText("OCUPAR");
+        btnOcupar11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOcupar11ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnOcupar11);
+        btnOcupar11.setBounds(12, 117, 104, 25);
+
+        btnOcupar12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnOcupar12.setText("OCUPAR");
+        btnOcupar12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOcupar12ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnOcupar12);
+        btnOcupar12.setBounds(10, 160, 104, 25);
+
+        btnOcupar13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnOcupar13.setText("OCUPAR");
+        btnOcupar13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOcupar13ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnOcupar13);
+        btnOcupar13.setBounds(12, 198, 104, 25);
+
+        btnOcupar14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnOcupar14.setText("OCUPAR");
+        btnOcupar14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOcupar14ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnOcupar14);
+        btnOcupar14.setBounds(12, 236, 104, 25);
+
+        btnOcupar15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnOcupar15.setText("OCUPAR");
+        btnOcupar15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOcupar15ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnOcupar15);
+        btnOcupar15.setBounds(12, 275, 104, 25);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("Sala:");
@@ -115,102 +194,56 @@ public class panelAgenda extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel11.setText("15:00 - 16:00");
 
-        lblEstado9a10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblEstado9a10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEstado9a10.setText("LIBRE");
+        lblEstado9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblEstado9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEstado9.setText("Consulte");
 
-        lblEstado10a11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblEstado10a11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEstado10a11.setText("LIBRE");
+        lblEstado10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblEstado10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEstado10.setText("Consulte");
 
-        lblEstado11a12.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblEstado11a12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEstado11a12.setText("LIBRE");
+        lblEstado11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblEstado11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEstado11.setText("Consulte");
 
-        lblEstado12a13.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblEstado12a13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEstado12a13.setText("LIBRE");
+        lblEstado12.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblEstado12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEstado12.setText("Consulte");
 
-        lblEstado13a14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblEstado13a14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEstado13a14.setText("LIBRE");
+        lblEstado13.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblEstado13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEstado13.setText("Consulte");
 
-        lblEstado14a15.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblEstado14a15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEstado14a15.setText("LIBRE");
+        lblEstado14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblEstado14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEstado14.setText("Consulte");
 
-        lblEstado15a16.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblEstado15a16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEstado15a16.setText("LIBRE");
-
-        btnOcupar9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnOcupar9.setText("OCUPAR");
-
-        btnOcupar10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnOcupar10.setText("OCUPAR");
-
-        btnOcupar11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnOcupar11.setText("OCUPAR");
-
-        btnOcupar12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnOcupar12.setText("OCUPAR");
-
-        btnOcupar13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnOcupar13.setText("OCUPAR");
-
-        btnOcupar14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnOcupar14.setText("OCUPAR");
-
-        btnOcupar15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnOcupar15.setText("OCUPAR");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnOcupar9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnOcupar10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
-                    .addComponent(btnOcupar11, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
-                    .addComponent(btnOcupar12, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
-                    .addComponent(btnOcupar13, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
-                    .addComponent(btnOcupar14, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
-                    .addComponent(btnOcupar15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(btnOcupar9)
-                .addGap(18, 18, 18)
-                .addComponent(btnOcupar10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnOcupar11)
-                .addGap(18, 18, 18)
-                .addComponent(btnOcupar12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnOcupar13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnOcupar14)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
-                .addComponent(btnOcupar15))
-        );
+        lblEstado15.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblEstado15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEstado15.setText("Consulte");
 
         btnHecho.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btnHecho.setText("HECHO");
+        btnHecho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHechoActionPerformed(evt);
+            }
+        });
 
         btnLimpiarAgenda.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnLimpiarAgenda.setText("Limpiar Agenda");
+        btnLimpiarAgenda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarAgendaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(btnHecho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnLimpiarAgenda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnLimpiarAgenda, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -253,9 +286,9 @@ public class panelAgenda extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(31, 31, 31)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)
                                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(cbxDia, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -264,13 +297,13 @@ public class panelAgenda extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblEstado9a10, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                            .addComponent(lblEstado10a11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblEstado11a12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblEstado12a13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblEstado13a14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblEstado14a15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblEstado15a16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblEstado9, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                            .addComponent(lblEstado10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblEstado11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblEstado12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblEstado13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblEstado14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblEstado15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(309, 309, 309)))
                 .addContainerGap())
         );
@@ -287,7 +320,7 @@ public class panelAgenda extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblNombreSala, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 5, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(46, 46, 46)
@@ -309,24 +342,25 @@ public class panelAgenda extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jLabel11))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(lblEstado9a10)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblEstado10a11)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblEstado11a12)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblEstado12a13)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblEstado13a14)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblEstado14a15)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblEstado15a16))
-                            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(lblEstado9)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(lblEstado10)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(lblEstado11)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(lblEstado12)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(lblEstado13)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(lblEstado14)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(lblEstado15))
+                                .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
 
@@ -336,12 +370,186 @@ public class panelAgenda extends javax.swing.JFrame {
     private void cbxDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxDiaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cbxDiaActionPerformed
-
+    
     private void btnConsultaSalaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaSalaActionPerformed
         // TODO add your handling code here:
-        int dia = cbxDia.getSelectedIndex();
-        System.out.print(dia);
+        panelPrincipal frame = new panelPrincipal();
+        d = cbxDia.getSelectedIndex();
+        s = frame.salaEnConsulta;
+        
+        try{
+        if(salas.agenda[0][d][s] == 1){
+            lblEstado9.setText("Ocupado");
+            btnOcupar9.setVisible(false);
+        }else{
+            lblEstado9.setText("Libre");
+            btnOcupar9.setVisible(true);
+        }
+            
+        }catch(Exception e){
+            return;
+        }
+        
+        try{
+        if(salas.agenda[1][d][s] == 1){
+            lblEstado10.setText("Ocupado");
+            btnOcupar10.setVisible(false);
+        }else{
+            lblEstado10.setText("Libre");
+            btnOcupar10.setVisible(true);
+        }
+            
+        }catch(Exception e){
+            return;
+        }
+        
+        try{
+        if(salas.agenda[2][d][s] == 1){
+            lblEstado11.setText("Ocupado");
+            btnOcupar11.setVisible(false);
+        }else{
+            lblEstado11.setText("Libre");
+            btnOcupar11.setVisible(true);
+        }
+            
+        }catch(Exception e){
+            return;
+        }
+        
+        try{
+        if(salas.agenda[3][d][s] == 1){
+            lblEstado12.setText("Ocupado");
+            btnOcupar12.setVisible(false);
+        }else{
+            lblEstado12.setText("Libre");
+            btnOcupar12.setVisible(true);
+        }
+            
+        }catch(Exception e){
+            return;
+        }
+        
+        try{
+        if(salas.agenda[4][d][s] == 1){
+            lblEstado13.setText("Ocupado");
+            btnOcupar13.setVisible(false);
+        }else{
+            lblEstado13.setText("Libre");
+            btnOcupar13.setVisible(true);
+        }
+            
+        }catch(Exception e){
+            return;
+        }
+        
+        try{
+        if(salas.agenda[5][d][s] == 1){
+            lblEstado14.setText("Ocupado");
+            btnOcupar14.setVisible(false);
+        }else{
+            lblEstado14.setText("Libre");
+            btnOcupar14.setVisible(true);
+        }
+            
+        }catch(Exception e){
+            return;
+        }
+        
+        try{
+        if(salas.agenda[6][d][s] == 1){
+            lblEstado15.setText("Ocupado");
+            btnOcupar15.setVisible(false);
+        }else{
+            lblEstado15.setText("Libre");
+            btnOcupar15.setVisible(true);
+        }
+            
+        }catch(Exception e){
+            return;
+        }
+        
     }//GEN-LAST:event_btnConsultaSalaActionPerformed
+
+    private void btnHechoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHechoActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_btnHechoActionPerformed
+
+    private void btnOcupar9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar9ActionPerformed
+        // TODO add your handling code here:
+        panelPrincipal frame = new panelPrincipal();
+        d = cbxDia.getSelectedIndex();
+        s = frame.salaEnConsulta;
+        salas.agenda[0][d][s] = 1;
+        btnOcupar9.setVisible(false);
+        
+    }//GEN-LAST:event_btnOcupar9ActionPerformed
+
+    private void btnOcupar10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar10ActionPerformed
+        // TODO add your handling code here:
+        panelPrincipal frame = new panelPrincipal();
+        d = cbxDia.getSelectedIndex();
+        s = frame.salaEnConsulta;
+        salas.agenda[1][d][s] = 1;
+        btnOcupar10.setVisible(false);
+    }//GEN-LAST:event_btnOcupar10ActionPerformed
+
+    private void btnOcupar11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar11ActionPerformed
+        // TODO add your handling code here:
+        panelPrincipal frame = new panelPrincipal();
+        d = cbxDia.getSelectedIndex();
+        s = frame.salaEnConsulta;
+        salas.agenda[2][d][s] = 1;
+        btnOcupar11.setVisible(false);
+    }//GEN-LAST:event_btnOcupar11ActionPerformed
+
+    private void btnOcupar12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar12ActionPerformed
+        // TODO add your handling code here:
+        panelPrincipal frame = new panelPrincipal();
+        d = cbxDia.getSelectedIndex();
+        s = frame.salaEnConsulta;
+        salas.agenda[3][d][s] = 1;
+        btnOcupar12.setVisible(false);
+    }//GEN-LAST:event_btnOcupar12ActionPerformed
+
+    private void btnOcupar13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar13ActionPerformed
+        // TODO add your handling code here:
+        panelPrincipal frame = new panelPrincipal();
+        d = cbxDia.getSelectedIndex();
+        s = frame.salaEnConsulta;
+        salas.agenda[4][d][s] = 1;
+        btnOcupar13.setVisible(false);
+    }//GEN-LAST:event_btnOcupar13ActionPerformed
+
+    private void btnOcupar14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar14ActionPerformed
+        // TODO add your handling code here:
+        panelPrincipal frame = new panelPrincipal();
+        d = cbxDia.getSelectedIndex();
+        s = frame.salaEnConsulta;
+        salas.agenda[5][d][s] = 1;
+        btnOcupar14.setVisible(false);
+    }//GEN-LAST:event_btnOcupar14ActionPerformed
+
+    private void btnOcupar15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar15ActionPerformed
+        // TODO add your handling code here:
+        panelPrincipal frame = new panelPrincipal();
+        d = cbxDia.getSelectedIndex();
+        s = frame.salaEnConsulta;
+        salas.agenda[6][d][s] = 1;
+        btnOcupar15.setVisible(false);
+    }//GEN-LAST:event_btnOcupar15ActionPerformed
+
+    private void btnLimpiarAgendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarAgendaActionPerformed
+        // TODO add your handling code here:
+        salas.resetAgenda();
+        btnOcupar9.setVisible(true);
+        btnOcupar10.setVisible(true);
+        btnOcupar11.setVisible(true);
+        btnOcupar12.setVisible(true);
+        btnOcupar13.setVisible(true);
+        btnOcupar14.setVisible(true);
+        btnOcupar15.setVisible(true);
+    }//GEN-LAST:event_btnLimpiarAgendaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -379,16 +587,16 @@ public class panelAgenda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnConsultaSala;
+    public javax.swing.JButton btnConsultaSala;
     private javax.swing.JButton btnHecho;
     private javax.swing.JButton btnLimpiarAgenda;
-    private javax.swing.JButton btnOcupar10;
-    private javax.swing.JButton btnOcupar11;
-    private javax.swing.JButton btnOcupar12;
-    private javax.swing.JButton btnOcupar13;
-    private javax.swing.JButton btnOcupar14;
-    private javax.swing.JButton btnOcupar15;
-    private javax.swing.JButton btnOcupar9;
+    public javax.swing.JButton btnOcupar10;
+    public javax.swing.JButton btnOcupar11;
+    public javax.swing.JButton btnOcupar12;
+    public javax.swing.JButton btnOcupar13;
+    public javax.swing.JButton btnOcupar14;
+    public javax.swing.JButton btnOcupar15;
+    public javax.swing.JButton btnOcupar9;
     private javax.swing.JComboBox<String> cbxDia;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -403,13 +611,13 @@ public class panelAgenda extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel lblEstado10a11;
-    private javax.swing.JLabel lblEstado11a12;
-    private javax.swing.JLabel lblEstado12a13;
-    private javax.swing.JLabel lblEstado13a14;
-    private javax.swing.JLabel lblEstado14a15;
-    private javax.swing.JLabel lblEstado15a16;
-    private javax.swing.JLabel lblEstado9a10;
-    private javax.swing.JLabel lblNombreSala;
+    public javax.swing.JLabel lblEstado10;
+    public javax.swing.JLabel lblEstado11;
+    public javax.swing.JLabel lblEstado12;
+    public javax.swing.JLabel lblEstado13;
+    public javax.swing.JLabel lblEstado14;
+    public javax.swing.JLabel lblEstado15;
+    public javax.swing.JLabel lblEstado9;
+    public javax.swing.JLabel lblNombreSala;
     // End of variables declaration//GEN-END:variables
 }

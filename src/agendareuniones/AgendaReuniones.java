@@ -16,6 +16,8 @@ public class AgendaReuniones {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        panelPrincipal frame = new panelPrincipal();
+        frame.setVisible(true);
     }
     
 }

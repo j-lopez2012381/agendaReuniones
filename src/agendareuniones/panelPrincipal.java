@@ -5,6 +5,8 @@
  */
 package agendareuniones;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Estuardo
@@ -16,6 +18,7 @@ public class panelPrincipal extends javax.swing.JFrame {
      */
     public panelPrincipal() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("../icons/chocolate.png")).getImage());
     }
 
     /**
@@ -43,9 +46,7 @@ public class panelPrincipal extends javax.swing.JFrame {
         setIconImages(getIconImages());
         setMaximumSize(new java.awt.Dimension(765, 560));
         setMinimumSize(new java.awt.Dimension(765, 560));
-        setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(765, 560));
-        setResizable(false);
         getContentPane().setLayout(null);
 
         jButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
@@ -99,6 +100,8 @@ public class panelPrincipal extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/salas-reuniones-officehelp.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 760, 530);
+
+        getAccessibleContext().setAccessibleDescription("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

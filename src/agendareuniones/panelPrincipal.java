@@ -156,7 +156,7 @@ public class panelPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("A-1");
         formAgenda.salaEnConsulta = 0;
-        System.out.println(formAgenda.salaEnConsulta);
+        //System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaA1ActionPerformed
 
@@ -164,7 +164,7 @@ public class panelPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("A-3");
         formAgenda.salaEnConsulta = 2;
-        System.out.println(formAgenda.salaEnConsulta);
+        //System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaA3ActionPerformed
 
@@ -172,7 +172,7 @@ public class panelPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("A-2");
         formAgenda.salaEnConsulta = 1;
-        System.out.println(formAgenda.salaEnConsulta);
+        //System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaA2ActionPerformed
 
@@ -180,7 +180,7 @@ public class panelPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("B-1");
         formAgenda.salaEnConsulta = 3;
-        System.out.println(formAgenda.salaEnConsulta);
+        //System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaB1ActionPerformed
 
@@ -188,7 +188,7 @@ public class panelPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("B-2");
         formAgenda.salaEnConsulta = 4;
-        System.out.println(formAgenda.salaEnConsulta);
+        //System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaB2ActionPerformed
 
@@ -196,7 +196,7 @@ public class panelPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("B-3");
         formAgenda.salaEnConsulta = 5;
-        System.out.println(formAgenda.salaEnConsulta);
+        //System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaB3ActionPerformed
 

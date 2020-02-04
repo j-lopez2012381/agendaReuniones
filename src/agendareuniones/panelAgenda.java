@@ -424,7 +424,7 @@ public class panelAgenda extends javax.swing.JFrame {
         if(salas.agenda[0][d][s] == 1){
             lblEstado9.setText("Ocupado");
             btnOcupar9.setVisible(false);
-            System.out.println(salaEnConsulta);
+            //System.out.println(salaEnConsulta);
         }else{
             lblEstado9.setText("Libre");
             btnOcupar9.setVisible(true);

@@ -22,7 +22,6 @@ public class panelPrincipal extends javax.swing.JFrame {
     }
     panelAgenda formAgenda = new panelAgenda();
     
-    int salaEnConsulta;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -143,42 +142,48 @@ public class panelPrincipal extends javax.swing.JFrame {
     private void btnSalaA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaA1ActionPerformed
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("A-1");
-        salaEnConsulta = 0;
+        formAgenda.salaEnConsulta = 0;
+        System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaA1ActionPerformed
 
     private void btnSalaA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaA3ActionPerformed
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("A-3");
-        salaEnConsulta = 2;
+        formAgenda.salaEnConsulta = 2;
+        System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaA3ActionPerformed
 
     private void btnSalaA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaA2ActionPerformed
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("A-2");
-        salaEnConsulta = 1;
+        formAgenda.salaEnConsulta = 1;
+        System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaA2ActionPerformed
 
     private void btnSalaB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaB1ActionPerformed
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("B-1");
-        salaEnConsulta = 3;
+        formAgenda.salaEnConsulta = 3;
+        System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaB1ActionPerformed
 
     private void btnSalaB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaB2ActionPerformed
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("B-2");
-        salaEnConsulta = 4;
+        formAgenda.salaEnConsulta = 4;
+        System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaB2ActionPerformed
 
     private void btnSalaB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaB3ActionPerformed
         // TODO add your handling code here:
         formAgenda.lblNombreSala.setText("B-3");
-        salaEnConsulta = 5;
+        formAgenda.salaEnConsulta = 5;
+        System.out.println(formAgenda.salaEnConsulta);
         formAgenda.setVisible(true);
     }//GEN-LAST:event_btnSalaB3ActionPerformed
 

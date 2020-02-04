@@ -15,6 +15,7 @@ public class panelAgenda extends javax.swing.JFrame {
     int h;
     int d;
     int s;
+    int salaEnConsulta;
 
     /**
      * Creates new form panelAgenda
@@ -369,18 +370,33 @@ public class panelAgenda extends javax.swing.JFrame {
 
     private void cbxDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxDiaActionPerformed
         // TODO add your handling code here:
+        btnOcupar9.setVisible(true);
+        btnOcupar10.setVisible(true);
+        btnOcupar11.setVisible(true);
+        btnOcupar12.setVisible(true);
+        btnOcupar13.setVisible(true);
+        btnOcupar14.setVisible(true);
+        btnOcupar15.setVisible(true);
+        lblEstado9.setText("Consulte");
+        lblEstado10.setText("Consulte");
+        lblEstado11.setText("Consulte");
+        lblEstado12.setText("Consulte");
+        lblEstado13.setText("Consulte");
+        lblEstado14.setText("Consulte");
+        lblEstado15.setText("Consulte");
     }//GEN-LAST:event_cbxDiaActionPerformed
     
     private void btnConsultaSalaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaSalaActionPerformed
         // TODO add your handling code here:
         panelPrincipal frame = new panelPrincipal();
         d = cbxDia.getSelectedIndex();
-        s = frame.salaEnConsulta;
+        s = salaEnConsulta;
         
         try{
         if(salas.agenda[0][d][s] == 1){
             lblEstado9.setText("Ocupado");
             btnOcupar9.setVisible(false);
+            System.out.println(salaEnConsulta);
         }else{
             lblEstado9.setText("Libre");
             btnOcupar9.setVisible(true);
@@ -473,15 +489,30 @@ public class panelAgenda extends javax.swing.JFrame {
     private void btnHechoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHechoActionPerformed
         // TODO add your handling code here:
         dispose();
+        btnOcupar9.setVisible(true);
+        btnOcupar10.setVisible(true);
+        btnOcupar11.setVisible(true);
+        btnOcupar12.setVisible(true);
+        btnOcupar13.setVisible(true);
+        btnOcupar14.setVisible(true);
+        btnOcupar15.setVisible(true);
+        lblEstado9.setText("Consulte");
+        lblEstado10.setText("Consulte");
+        lblEstado11.setText("Consulte");
+        lblEstado12.setText("Consulte");
+        lblEstado13.setText("Consulte");
+        lblEstado14.setText("Consulte");
+        lblEstado15.setText("Consulte");
     }//GEN-LAST:event_btnHechoActionPerformed
 
     private void btnOcupar9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar9ActionPerformed
         // TODO add your handling code here:
         panelPrincipal frame = new panelPrincipal();
         d = cbxDia.getSelectedIndex();
-        s = frame.salaEnConsulta;
+        s = salaEnConsulta;
         salas.agenda[0][d][s] = 1;
         btnOcupar9.setVisible(false);
+        lblEstado9.setText("Ocupado");
         
     }//GEN-LAST:event_btnOcupar9ActionPerformed
 
@@ -489,54 +520,60 @@ public class panelAgenda extends javax.swing.JFrame {
         // TODO add your handling code here:
         panelPrincipal frame = new panelPrincipal();
         d = cbxDia.getSelectedIndex();
-        s = frame.salaEnConsulta;
+        s = salaEnConsulta;
         salas.agenda[1][d][s] = 1;
         btnOcupar10.setVisible(false);
+        lblEstado10.setText("Ocupado");
     }//GEN-LAST:event_btnOcupar10ActionPerformed
 
     private void btnOcupar11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar11ActionPerformed
         // TODO add your handling code here:
         panelPrincipal frame = new panelPrincipal();
         d = cbxDia.getSelectedIndex();
-        s = frame.salaEnConsulta;
+        s = salaEnConsulta;
         salas.agenda[2][d][s] = 1;
         btnOcupar11.setVisible(false);
+        lblEstado11.setText("Ocupado");
     }//GEN-LAST:event_btnOcupar11ActionPerformed
 
     private void btnOcupar12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar12ActionPerformed
         // TODO add your handling code here:
         panelPrincipal frame = new panelPrincipal();
         d = cbxDia.getSelectedIndex();
-        s = frame.salaEnConsulta;
+        s = salaEnConsulta;
         salas.agenda[3][d][s] = 1;
         btnOcupar12.setVisible(false);
+        lblEstado12.setText("Ocupado");
     }//GEN-LAST:event_btnOcupar12ActionPerformed
 
     private void btnOcupar13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar13ActionPerformed
         // TODO add your handling code here:
         panelPrincipal frame = new panelPrincipal();
         d = cbxDia.getSelectedIndex();
-        s = frame.salaEnConsulta;
+        s = salaEnConsulta;
         salas.agenda[4][d][s] = 1;
         btnOcupar13.setVisible(false);
+        lblEstado13.setText("Ocupado");
     }//GEN-LAST:event_btnOcupar13ActionPerformed
 
     private void btnOcupar14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar14ActionPerformed
         // TODO add your handling code here:
         panelPrincipal frame = new panelPrincipal();
         d = cbxDia.getSelectedIndex();
-        s = frame.salaEnConsulta;
+        s = salaEnConsulta;
         salas.agenda[5][d][s] = 1;
         btnOcupar14.setVisible(false);
+        lblEstado14.setText("Ocupado");
     }//GEN-LAST:event_btnOcupar14ActionPerformed
 
     private void btnOcupar15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcupar15ActionPerformed
         // TODO add your handling code here:
         panelPrincipal frame = new panelPrincipal();
         d = cbxDia.getSelectedIndex();
-        s = frame.salaEnConsulta;
+        s = salaEnConsulta;
         salas.agenda[6][d][s] = 1;
         btnOcupar15.setVisible(false);
+        lblEstado15.setText("Ocupado");
     }//GEN-LAST:event_btnOcupar15ActionPerformed
 
     private void btnLimpiarAgendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarAgendaActionPerformed
